@@ -27,6 +27,7 @@ $wampConfFileContents = fread ($fp, filesize ($wampConfFile));
 fclose ($fp);
 
 
+
 //on rs les versions des applis
 preg_match('|phpVersion = (.*)\n|',$wampConfFileContents,$result);
 $phpVersion = str_replace('"','',$result[1]);
